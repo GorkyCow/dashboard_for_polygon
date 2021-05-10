@@ -1,6 +1,6 @@
 creds:
-  username: ''
-  password: ''
-  host: ''
-  port: ''
-  db_name: ''
+  username: 'postgres'
+  password: 'supersecretpassword'
+  host: 'db'
+  port: '5432'
+  db_name: 'polygon'

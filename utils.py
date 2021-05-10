@@ -1,9 +1,9 @@
-from datetime import datetime, timedelta
 from collections import OrderedDict
+from datetime import datetime, timedelta
 
 
 def ts_to_datetime(ts) -> str:
-    return datetime.fromtimestamp(ts / 1000.0).strftime('%Y-%m-%d %H:%M:00')
+    return datetime.fromtimestamp(ts / 1000.0).strftime("%Y-%m-%d %H:%M:00")
 
 
 def get_last_n_days(day=None, n=30):
@@ -12,7 +12,12 @@ def get_last_n_days(day=None, n=30):
     else:
         end = datetime.now()
     start = end - timedelta(n)
-    return list(OrderedDict(((start + timedelta(_)).strftime("%Y-%m-%d"), None) for _ in range((end - start).days)).keys())
+    return list(
+        OrderedDict(
+            ((start + timedelta(_)).strftime("%Y-%m-%d"), None)
+            for _ in range((end - start).days)
+        ).keys()
+    )
 
 
 def day_to_range(day):

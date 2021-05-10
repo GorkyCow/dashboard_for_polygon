@@ -1,2 +1,4 @@
-bot:
-  token: ''
+polygon:
+  key: ""
+common:
+  day_to_load: 30

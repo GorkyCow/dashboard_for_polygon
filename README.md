@@ -4,7 +4,7 @@ Dashboard for polygon.io
 В config.yml добавьте рабочий ключ API для polygon.io
 
 Для сборки docker-образов запустите
-# docker-compose build
+  docker-compose build
 
 Для старта проекта запустите
-docker-compose up -d
+   docker-compose up -d

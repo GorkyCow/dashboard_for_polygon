@@ -21,11 +21,11 @@ services:
       working_dir: /usr/src/app
       restart: always
       container_name: 'web_app'
-      command: python app.py
+      command: ./gunicorn.sh
       volumes:
         - .:/usr/src/app
       ports:
-        - '8050:8050'
+        - '8080:8080'
       depends_on:
         - db
       networks:

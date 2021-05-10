@@ -89,5 +89,4 @@ def display_candlestick(toggle_rangeslider_value, paper_value, date_value):
 
 
 if __name__ == "__main__":
-    #app.run_server(debug=True)
     app.run_server(debug=True, host='0.0.0.0', port=8080) 
